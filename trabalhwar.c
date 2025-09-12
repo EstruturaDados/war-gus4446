@@ -10,8 +10,8 @@ struct territorio{
 int main() {
     struct territorio territorios[5];
 
-    print("=== Cadastro de territórios ===\n\n");
-    for(int i = 0; i < 5 i++) {
+    printf("=== Cadastro de territórios ===\n\n");
+    for(int i = 0; i < 5; i++) {
         printf("Território %d: \n", i+ 1);
 
         printf("Digite o nome do território: ");
@@ -21,7 +21,7 @@ int main() {
         scanf("%s", territorios[i].cor);
 
         printf("Digite a quantidade de tropas: ");
-        scanf("%s",territorios[i].cor)
+        scanf("%s",territorios[i].cor);
 
         printf("--------------------------------");
     }
@@ -29,7 +29,7 @@ int main() {
     printf("\n=== Territorios cadastrados ===\n\n");
     for(int i = 0; i < 5; i++){
         printf("Territorio %d: \n", i + 1);
-        print("nome: %s\n", territorios[i].nome);
+        printf("nome: %s\n", territorios[i].nome);
         printf("Cor do exercito: %s\n", territorios[i].cor);
         printf("Quantidade de tropas: %d\n", territorios[i].tropas);
         printf("-------------------------------------------");
